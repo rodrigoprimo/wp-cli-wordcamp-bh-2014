@@ -1533,7 +1533,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             
             
             <section><p>Rodrigo Primo</p>
-<p>WordCamp São Paulo 2013</p>
+<p>WordCamp Belo Horizonte 2014</p>
 </section>
             
           </div>
@@ -1555,7 +1555,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              1/24
+              1/26
             </aside>
           </footer>
         </div>
@@ -1590,7 +1590,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              2/24
+              2/26
             </aside>
           </footer>
         </div>
@@ -1627,7 +1627,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              3/24
+              3/26
             </aside>
           </footer>
         </div>
@@ -1656,7 +1656,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              4/24
+              4/26
             </aside>
           </footer>
         </div>
@@ -1694,7 +1694,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              5/24
+              5/26
             </aside>
           </footer>
         </div>
@@ -1739,7 +1739,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              6/24
+              6/26
             </aside>
           </footer>
         </div>
@@ -1763,7 +1763,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
 <span class="go">wp&gt; get_bloginfo(&#39;blogname&#39;)</span>
 <span class="go">string(13) &quot;WordCamp&quot;</span>
 <span class="go">wp&gt; get_the_title(1)</span>
-<span class="go">string(23) &quot;WordCamp São Paulo 2013&quot;</span>
+<span class="go">string(23) &quot;WordCamp Belo Horizonte 2014&quot;</span>
 </pre></div>
 </section>
             
@@ -1782,7 +1782,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              7/24
+              7/26
             </aside>
           </footer>
         </div>
@@ -1819,7 +1819,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              8/24
+              8/26
             </aside>
           </footer>
         </div>
@@ -1839,8 +1839,8 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
 <li>Suporte não oficial ao Windows através do projeto WP-PowerShell - https://github.com/ericmann/WP-PowerShell</li>
 </ul>
 </li>
-<li>PHP &gt;= 5.3.2 e php5-cli</li>
-<li>WordPress &gt;= 3.4</li>
+<li>PHP &gt;= 5.3 e php5-cli</li>
+<li>WordPress &gt;= 3.5</li>
 </ul></section>
             
           </div>
@@ -1858,7 +1858,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              9/24
+              9/26
             </aside>
           </footer>
         </div>
@@ -1873,13 +1873,10 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             
             
             <section><p>No terminal:</p>
-<div class="highlight"><pre><span class="go">$ curl https://raw.github.com/wp-cli/wp-cli.github.com/master/</span>
-<span class="go">installer.sh | bash</span>
-</pre></div>
-
-<p>Adicionar as linhas abaixo ao .bash_profile para auto-complete dos comandos:</p>
-<div class="highlight"><pre><span class="go"># WP-CLI Bash completions</span>
-<span class="go">source ~/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash</span>
+<div class="highlight"><pre><span class="go">$ curl -L https://raw.github.com/wp-cli/builds/gh-pages/phar/</span>
+<span class="go">wp-cli.phar &gt; wp-cli.phar</span>
+<span class="go">$ chmod +x wp-cli.phar</span>
+<span class="go">$ sudo mv wp-cli.phar /usr/bin/wp</span>
 </pre></div>
 
 <p>Mais informações em http://wp-cli.org</p></section>
@@ -1899,7 +1896,47 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              10/24
+              10/26
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: apresentacao.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Como instalar</h1></header>
+            
+            
+            <section><p>Para instalar o auto-complete dos comandos, primeiro baixar o arquivo wp-completion.bash:</p>
+<div class="highlight"><pre><span class="go">$ wget https://github.com/wp-cli/wp-cli/raw/master/utils/</span>
+<span class="go">wp-completion.bash</span>
+</pre></div>
+
+<p>E então adicionar as linhas abaixo ao .bash_profile:</p>
+<div class="highlight"><pre><span class="go"># WP-CLI Bash completions</span>
+<span class="go">source /caminho/para/wp-completion.bash</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="apresentacao.md">apresentacao.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/26
             </aside>
           </footer>
         </div>
@@ -1946,7 +1983,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              11/24
+              12/26
             </aside>
           </footer>
         </div>
@@ -1975,7 +2012,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              12/24
+              13/26
             </aside>
           </footer>
         </div>
@@ -2019,7 +2056,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              13/24
+              14/26
             </aside>
           </footer>
         </div>
@@ -2034,7 +2071,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             
             
             <section><p>Instalar plugin:</p>
-<div class="highlight"><pre><span class="go">$ wp plugin install debug-bar</span>
+<div class="highlight"><pre><span class="go">$ wp plugin install --activate query-monitor</span>
 </pre></div>
 
 <p>Instalar tema:</p>
@@ -2061,7 +2098,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              14/24
+              15/26
             </aside>
           </footer>
         </div>
@@ -2103,7 +2140,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              15/24
+              16/26
             </aside>
           </footer>
         </div>
@@ -2145,7 +2182,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              16/24
+              17/26
             </aside>
           </footer>
         </div>
@@ -2179,7 +2216,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              17/24
+              18/26
             </aside>
           </footer>
         </div>
@@ -2215,7 +2252,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              18/24
+              19/26
             </aside>
           </footer>
         </div>
@@ -2259,7 +2296,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              19/24
+              20/26
             </aside>
           </footer>
         </div>
@@ -2300,7 +2337,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              20/24
+              21/26
             </aside>
           </footer>
         </div>
@@ -2341,7 +2378,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              21/24
+              22/26
             </aside>
           </footer>
         </div>
@@ -2389,7 +2426,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              22/24
+              23/26
             </aside>
           </footer>
         </div>
@@ -2424,7 +2461,36 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              23/24
+              24/26
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: apresentacao.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Demonstração</h1></header>
+            
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            
+            <aside class="source">
+              Source: <a href="apresentacao.md">apresentacao.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              25/26
             </aside>
           </footer>
         </div>
@@ -2459,7 +2525,7 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
             </aside>
             
             <aside class="page_number">
-              24/24
+              26/26
             </aside>
           </footer>
         </div>
@@ -2533,52 +2599,52 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
       
       
       <tr id="toc-row-11">
-        <th><a href="#slide11">Uso básico</a></th>
+        <th><a href="#slide11">Como instalar</a></th>
         <td><a href="#slide11">11</a></td>
       </tr>
       
       
       <tr id="toc-row-12">
-        <th><a href="#slide12">Mais exemplos de comandos</a></th>
+        <th><a href="#slide12">Uso básico</a></th>
         <td><a href="#slide12">12</a></td>
       </tr>
       
-        
-        <tr id="toc-row-13" class="sub">
-          <th><a href="#slide13">Baixar e instalar o WP</a></th>
-          <td><a href="#slide13">13</a></td>
-        </tr>
+      
+      <tr id="toc-row-13">
+        <th><a href="#slide13">Mais exemplos de comandos</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
         
         <tr id="toc-row-14" class="sub">
-          <th><a href="#slide14">Tarefas de administração</a></th>
+          <th><a href="#slide14">Baixar e instalar o WP</a></th>
           <td><a href="#slide14">14</a></td>
         </tr>
         
         <tr id="toc-row-15" class="sub">
-          <th><a href="#slide15">Tarefas de desenvolvimento</a></th>
+          <th><a href="#slide15">Tarefas de administração</a></th>
           <td><a href="#slide15">15</a></td>
         </tr>
         
         <tr id="toc-row-16" class="sub">
-          <th><a href="#slide16">Banco de dados</a></th>
+          <th><a href="#slide16">Tarefas de desenvolvimento</a></th>
           <td><a href="#slide16">16</a></td>
         </tr>
         
         <tr id="toc-row-17" class="sub">
-          <th><a href="#slide17">Combinando comandos</a></th>
+          <th><a href="#slide17">Banco de dados</a></th>
           <td><a href="#slide17">17</a></td>
+        </tr>
+        
+        <tr id="toc-row-18" class="sub">
+          <th><a href="#slide18">Combinando comandos</a></th>
+          <td><a href="#slide18">18</a></td>
         </tr>
         
       
       
-      <tr id="toc-row-18">
-        <th><a href="#slide18">O WP-CLI é extensível</a></th>
-        <td><a href="#slide18">18</a></td>
-      </tr>
-      
-      
       <tr id="toc-row-19">
-        <th><a href="#slide19">CLI para o wp-super-cache</a></th>
+        <th><a href="#slide19">O WP-CLI é extensível</a></th>
         <td><a href="#slide19">19</a></td>
       </tr>
       
@@ -2602,14 +2668,26 @@ a){var b=F.exec(a);b&&(b[1]=(b[1]||"").toLowerCase(),b[3]=b[3]&&new RegExp("(?:^
       
       
       <tr id="toc-row-23">
-        <th><a href="#slide23">Como contribuir</a></th>
+        <th><a href="#slide23">CLI para o wp-super-cache</a></th>
         <td><a href="#slide23">23</a></td>
       </tr>
       
       
       <tr id="toc-row-24">
-        <th><a href="#slide24">Obrigado!</a></th>
+        <th><a href="#slide24">Como contribuir</a></th>
         <td><a href="#slide24">24</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-25">
+        <th><a href="#slide25">Demonstração</a></th>
+        <td><a href="#slide25">25</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-26">
+        <th><a href="#slide26">Obrigado!</a></th>
+        <td><a href="#slide26">26</a></td>
       </tr>
       
       

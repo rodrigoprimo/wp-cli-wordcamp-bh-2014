@@ -2,7 +2,7 @@
 
 Rodrigo Primo
 
-WordCamp São Paulo 2013
+WordCamp Belo Horizonte 2014
 
 .fx: titleslide
 
@@ -78,7 +78,7 @@ Depuração:
     wp> get_bloginfo('blogname')
     string(13) "WordCamp"
     wp> get_the_title(1)
-    string(23) "WordCamp São Paulo 2013"
+    string(23) "WordCamp Belo Horizonte 2014"
 
 ---
 
@@ -99,8 +99,8 @@ Atualizar o WP, plugins e temas:
 * Acesso ao shell
 * Linux ou OS X
     * Suporte não oficial ao Windows através do projeto WP-PowerShell - https://github.com/ericmann/WP-PowerShell
-* PHP >= 5.3.2 e php5-cli
-* WordPress >= 3.4
+* PHP >= 5.3 e php5-cli
+* WordPress >= 3.5
 
 ---
 
@@ -109,16 +109,28 @@ Atualizar o WP, plugins e temas:
 No terminal:
 
     !shell-session
-    $ curl https://raw.github.com/wp-cli/wp-cli.github.com/master/
-    installer.sh | bash
+    $ curl -L https://raw.github.com/wp-cli/builds/gh-pages/phar/
+    wp-cli.phar > wp-cli.phar
+    $ chmod +x wp-cli.phar
+    $ sudo mv wp-cli.phar /usr/bin/wp
 
-Adicionar as linhas abaixo ao .bash_profile para auto-complete dos comandos:
+Mais informações em http://wp-cli.org
+
+---
+
+# Como instalar
+
+Para instalar o auto-complete dos comandos, primeiro baixar o arquivo wp-completion.bash:
+
+    !shell-session
+    $ wget https://github.com/wp-cli/wp-cli/raw/master/utils/
+    wp-completion.bash
+
+E então adicionar as linhas abaixo ao .bash_profile:
 
     !shell-session
     # WP-CLI Bash completions
-    source ~/.wp-cli/vendor/wp-cli/wp-cli/utils/wp-completion.bash
-
-Mais informações em http://wp-cli.org
+    source /caminho/para/wp-completion.bash
 
 ---
 
@@ -177,7 +189,7 @@ Instalar:
 Instalar plugin:
 
     !shell-session
-    $ wp plugin install debug-bar
+    $ wp plugin install --activate query-monitor 
 
 Instalar tema:
 
@@ -326,6 +338,10 @@ Exemplo de comando:
 * http://wp-cli.org
 * &#35;wordpress-cli no irc.freenode.net
 * https://github.com/wp-cli/wp-cli/issues
+
+---
+
+# Demonstração
 
 ---
 
