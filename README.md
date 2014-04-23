@@ -1,4 +1,6 @@
-wp-cli-wordcamp-bh-2014
-=======================
+wp-cli-presentation
+===================
 
-Apresentação sobre o WP-CLI feita para o WordCamp Belo Horizonte 2014
+Apresentação sobre o WP-CLI feita para o WordCamp São Paulo 2013
+
+Slides gerados usando o landslide (https://github.com/adamzap/landslide)
