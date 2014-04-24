@@ -159,6 +159,31 @@ Estrutura dos comandos:
 
 ---
 
+# Arquivo de configuração
+
+* Permite definir um valor padrão para os parâmetros globais ou parâmetros de um comando específico
+* Escrito no formato YAML
+* Pode ser criado dentro de um projeto ou então na home do usuário
+* Para mais informações: http://wp-cli.org/config/
+
+---
+
+# Exemplo de arquivo de configuração
+
+    !shell-session
+    path: src
+    disabled_commands:
+      - db drop
+      - plugin install
+    require:
+      - path-to/command.php
+
+    core install:
+      admin_user: wordcamp
+      admin_email: wordcamp@example.com
+
+---
+
 # Mais exemplos de comandos
 
 ---
