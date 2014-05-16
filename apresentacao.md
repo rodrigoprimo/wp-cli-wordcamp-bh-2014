@@ -141,6 +141,12 @@ Lista dos comandos disponíveis:
     !shell-session
     $ wp
 
+Estrutura dos comandos:
+
+    !shell-session
+    $ wp comando subcomando --assoc_arg1=value1 arg1
+    $ wp user get --format=json admin
+
 Ajuda de um comando específico:
 
     !shell-session
@@ -150,12 +156,6 @@ Ajuda de um sub-comando específico:
 
     !shell-session
     $ wp help theme list
-
-Estrutura dos comandos:
-
-    !shell-session
-    $ wp comando subcomando --assoc_arg1=value1 arg1
-    $ wp user get --format=json admin
 
 ---
 
