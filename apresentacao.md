@@ -352,7 +352,6 @@ Exemplo de comando:
             } else {
                 WP_CLI::error( 'This is not a valid post id.' );
             }
-            wp_cache_post_change( $assoc_args['post_id'] );
         } else {
             global $file_prefix;
 
