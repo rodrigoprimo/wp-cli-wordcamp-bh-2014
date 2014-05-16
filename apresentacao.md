@@ -200,6 +200,11 @@ Criar o wp-config.php:
     !shell-session
     $ wp core config --dbname=baseDeDados --dbuser=usuario
 
+Criar a base de dados:
+
+    !shell-session
+    $ wp db create
+
 Instalar:
 
     !shell-session
